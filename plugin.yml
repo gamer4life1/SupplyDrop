@@ -1,0 +1,22 @@
+main: com.leo.supplydrops.Main
+name: SupplyDrop
+version: 1.0
+author: Sardine123
+description: A plugin that gives supply drops at regular intervals
+commands:
+  startsupplydrops:
+    description: Starts the supply drops with interval <interval>
+    usage: /startsupplydrops <interval>
+    permission: admin.supplydrops.start
+    permission-message: You don't have the admin.supplydrops.start permission!
+    aliases: [startsupplydrops, startsd]
+  stopsupplydrops:
+    description: Stops the supply drops.
+    usage: /stopsupplydrops
+    permission: admin.supplydrops.stop
+    permission-message: You don't have the admin.supplydrops.stop permission!
+    aliases: [stopsupplydrops, stopsd]
+permissions:
+  admin.supplydrops.exception:
+    description: Does not give you the supplies
+    default: op
